@@ -17,3 +17,8 @@ mongoose
   .then(() => app.listen(process.env.PORT || 5000))
   .then(() => console.log("Connected to database😊"))
   .catch((err) => console.log(err));
+
+  app.get('/', function (request, response)
+ { 
+    response.send('Hello World ✨🎉✨')
+ }); 
